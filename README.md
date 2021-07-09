@@ -20,7 +20,7 @@ For **Betterdiscord** Users:
 1. CLick > [Download](https://raw.githubusercontent.com/leeprky/Evo/main/source/support/betterdiscord/Evo.theme.css?token=AQ76J2FFJEPSWZBM2HUEV5LA5A4OG)
 2. Download Raw ATM
 
-For *Goosemod** Users:
+For **Goosemod** Users:
 
 1. Search The Store
 2. Import
