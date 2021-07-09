@@ -1,9 +1,9 @@
-# name (v - Latest)
-Desc
+# Evo (v0.0.0 - Latest)
+Evo Desc
 
 ![preview]()
 
-## How To Install name?
+## How To Install Evo?
 
 Its Simple!
 
@@ -12,13 +12,18 @@ For **Powercord** Users:
 1. Open CMD & Type:
 
 ```
-cd powercord/src/Powercord/themes && git clone https://github.com/leeprky/name
+cd powercord/src/Powercord/themes && git clone https://github.com/leeprky/Evo
 ```
 
 For **Betterdiscord** Users:
 
-1. CLick > [Download]()
+1. CLick > [Download](https://raw.githubusercontent.com/leeprky/Evo/main/source/support/betterdiscord/Evo.theme.css?token=AQ76J2FFJEPSWZBM2HUEV5LA5A4OG)
 2. Download Raw ATM
+
+For *Goosemod** Users:
+
+1. Search The Store
+2. Import
 
 #Screenshots
 
