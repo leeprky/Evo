@@ -6,7 +6,7 @@
 @import "https://leeprky.github.io/themes/Evo/version.css";
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
 
-:root {--outdated_evo-001: none; --version: "0.0.1"; --build: "001"}
+:root {--outdated_evo-001: none; --version: "0.0.1 - DEV"; --build: "001"}
 
 :root{ 
     --glasscord-win-blur: blurbehind;
