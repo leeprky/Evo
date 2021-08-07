@@ -6,7 +6,7 @@
 @import "https://leeprky.github.io/themes/Evo/version.css";
 @import url(https://ghostmander.github.io/discordfont/DiscordFont.css);
 
-:root {--outdated_evo-001: none; --version: "0.0.1 - DEV"; --build: "001"}
+:root {--outdated_evo-001: none; --version: "0.1.0"; --build: "001"}
 
 :root{ 
     --glasscord-win-blur: blurbehind;
@@ -129,7 +129,7 @@ body, #app-mount, .app-2rEoOp
  { background-color: var(--glasscord-secondary-alt) !important}
 
  /* Transparent */
- .wrapper-2qzCYF, .callContainer-3UuV6S, .container-pTf0Ly,  .threadSidebar-1o3BTy, .bg-h5JY_x, .scroller-2XE8rp, .theme-dark .pageWrapper-1PgVDX, .theme-light .pageWrapper-1PgVDX,.loadingPopout-qYljDW, .powercord-quickcss .CodeMirror-gutters, .bodyInnerWrapper-26fQXj, .header-2mZ9Ov, .tabBar-11f3uI.top-28JiJ-,  .titleContainer-2CXtJo, .scroller-305q3I, .paymentHistory-2FXzro, .contentRegionScroller-26nc1e, .standardSidebarView-3F1I7i, [class="layers-3iHuyZ layers-3q14ss"], .layer-3QrUeG, .contentRegion-3nDuYy, .sidebarRegionScroller-3MXcoP, .channelHeader-3Gd2xq, .app-2rEoOp, .wrapper-1F5TKx, .root-217Brm, .wrapper-2qzCYF.minimum-28Z35l, .scroller-9moviB, .applicationStore-1pNvnv, .header-39GIC8, .scroller-1IIF0A, .stageSection-3mAD8V, .wrapper-3NnKdC, .scroller-1Bvpku, .members-1998pB, .members-1998pB>div, .theme-light .form-2fGMdU:before, .theme-dark .form-2fGMdU:before, .container-3w7J-x, .sidebar-2K8pFh, .panels-j1Uci_, .chat-3bRxxu, .container-1r6BKw.themed-ANHk51, .wrapper-3vR61M, .theme-light .container-1D34oG, .theme-dark .container-1D34oG, .peopleColumn-29fq28, .theme-light .root-1gCeng ,.theme-dark .root-1gCeng, .theme-dark .contentWrapper-3WC1ID, .theme-light .contentWrapper-3WC1ID, .homeWrapper-3-Wh5T, .container-lRFx4q, .nowPlayingColumn-2sl4cE, .sidebar-2K8pFh,.base-3dtUhz, .privateChannels-1nO12o, .scroller-1JbKMe
+ .container-u0iLTp, .wrapper-2qzCYF, .callContainer-3UuV6S, .container-pTf0Ly,  .threadSidebar-1o3BTy, .bg-h5JY_x, .scroller-2XE8rp, .theme-dark .pageWrapper-1PgVDX, .theme-light .pageWrapper-1PgVDX,.loadingPopout-qYljDW, .powercord-quickcss .CodeMirror-gutters, .bodyInnerWrapper-26fQXj, .header-2mZ9Ov, .tabBar-11f3uI.top-28JiJ-,  .titleContainer-2CXtJo, .scroller-305q3I, .paymentHistory-2FXzro, .contentRegionScroller-26nc1e, .standardSidebarView-3F1I7i, [class="layers-3iHuyZ layers-3q14ss"], .layer-3QrUeG, .contentRegion-3nDuYy, .sidebarRegionScroller-3MXcoP, .channelHeader-3Gd2xq, .app-2rEoOp, .wrapper-1F5TKx, .root-217Brm, .wrapper-2qzCYF.minimum-28Z35l, .scroller-9moviB, .applicationStore-1pNvnv, .header-39GIC8, .scroller-1IIF0A, .stageSection-3mAD8V, .wrapper-3NnKdC, .scroller-1Bvpku, .members-1998pB, .members-1998pB>div, .theme-light .form-2fGMdU:before, .theme-dark .form-2fGMdU:before, .container-3w7J-x, .sidebar-2K8pFh, .panels-j1Uci_, .chat-3bRxxu, .container-1r6BKw.themed-ANHk51, .wrapper-3vR61M, .theme-light .container-1D34oG, .theme-dark .container-1D34oG, .peopleColumn-29fq28, .theme-light .root-1gCeng ,.theme-dark .root-1gCeng, .theme-dark .contentWrapper-3WC1ID, .theme-light .contentWrapper-3WC1ID, .homeWrapper-3-Wh5T, .container-lRFx4q, .nowPlayingColumn-2sl4cE, .sidebar-2K8pFh,.base-3dtUhz, .privateChannels-1nO12o, .scroller-1JbKMe
 { background-color: transparent !important; background: transparent !important }
 .theme-dark .notDetected-33MY4s, .theme-light .notDetected-33MY4s {
     background-color: var(--alt-color2);
@@ -410,7 +410,9 @@ margin-bottom: 40px;
    height: var(--popout-height);
  }
 
-
+* {
+  border-radius: 4px !important;
+}
 /* Rounding Things */
 :root {
   --roundness: unset;
@@ -719,7 +721,7 @@ margin-bottom: 40px;
   background-color: var(--glasscord-secondary);
   margin-bottom: 10px ;
 }
-.container-3baos1:not(.powercord-spotify) {
+.container-3baos1:not([class="powercord-spotify"]) {
   bottom: 10px;
   position: relative;
   background-color: var(--glasscord-secondary-alt);
@@ -756,12 +758,14 @@ margin-bottom: 40px;
 .uploadModal-2ifh8j .buttons-3JBrkn {opacity: 1.0;}
 
 
-.powercord-spotify {
-  box-shadow: 0px 22px transparent;
-  right: 24%;
-  width: 225px;
-  bottom: 90%;
-  position: absolute;
+.powercord-spotify{background-color:var(--background-tertiary);box-shadow:0 22px var(--background-primary);right:.4%;width:225px;bottom:22px;position:absolute}
+.powercord-spotify.hover{background-color:var(--background-tertiary);box-shadow:0 22px var(--background-primary);right:.4%;width:225px;bottom:22px;position:absolute}
+.powercord-spotify .spotify-buttons{display:none}
+.powercord-spotify.hover .spotify-buttons{display:none!important}
+.spotify-seek-bar,.powercord-spotify .spotify-seek-bar-progress{height:3.8px!important; display: none;}
+.panels-j1Uci_{background-color: transparent !important}
+.powercord-spotify.hover .spotify-extra-controls , .powercord-spotify .spotify-extra-controls + .spotify-seek{
+  display: none;
 }
 
 
